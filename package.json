@@ -1,0 +1,69 @@
+{
+  "name": "dynosched",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scale:up": "node lib up",
+    "scale:down": "node lib down",
+    "precommit": "lint-staged",
+    "prettier": "prettier --single-quote --write '**/*.{js,json}'",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "Andre Gallo <andre@sproutsuper.com.au>",
+  "engines": {
+    "node": "8.11.3",
+    "npm": "6.1.0"
+  },
+  "dependencies": {
+    "dotenv": "6.x.x",
+    "heroku-client": "3.x.x"
+  },
+  "devDependencies": {
+    "chai": "4.x.x",
+    "eslint": "5.x.x",
+    "eslint-config-prettier": "2.x.x",
+    "eslint-config-standard": "11.x.x",
+    "eslint-plugin-import": "2.x.x",
+    "eslint-plugin-node": "6.x.x",
+    "eslint-plugin-prettier": "2.x.x",
+    "eslint-plugin-promise": "3.x.x",
+    "eslint-plugin-standard": "3.x.x",
+    "husky": "0.x.x",
+    "lint-staged": "7.x.x",
+    "prettier": "1.x.x"
+  },
+  "lint-staged": {
+    "**/*.{js,json}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard",
+      "prettier",
+      "prettier/standard"
+    ],
+    "plugins": [
+      "prettier",
+      "standard"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true
+        }
+      ]
+    }
+  }
+}
