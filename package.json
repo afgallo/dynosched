@@ -11,7 +11,7 @@
     "lint": "eslint ."
   },
   "keywords": [],
-  "author": "Andre Gallo <andre@sproutsuper.com.au>",
+  "author": "Andre Gallo <afgallo@gmail.com>",
   "engines": {
     "node": "8.11.3",
     "npm": "6.1.0"
