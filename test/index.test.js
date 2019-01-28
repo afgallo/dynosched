@@ -57,7 +57,7 @@ describe('Dynosched', () => {
 
   it('it scales down on a Sunday', () => {
     setEnvVariables()
-    process.env.TZ = 'Australia/Sydney' // just to get the right coverage
+    process.env.TZ = 'America/Los_Angeles' // just to get the right coverage
     const tuesday = moment().startOf('month').isoWeekday(7)
 
     expect(scale(tuesday)).resolves.toEqual('down')
