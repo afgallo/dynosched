@@ -5,6 +5,7 @@ const { scale } = require('../lib')
 const setEnvVariables = () => {
   process.env.MY_HEROKU_API_TOKEN = 'some_token'
   process.env.APP_NAME = 'app'
+  process.env.TZ = 'Australia/Sydney'
 }
 
 jest.mock('heroku-client')
