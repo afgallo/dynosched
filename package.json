@@ -22,6 +22,7 @@
     "start": "node index.js",
     "test": "jest --silent",
     "test:cov": "jest --coverage",
+    "test:ci": "jest --coverage --silent",
     "test:watch": "jest --watch",
     "precommit": "lint-staged",
     "lint": "standard"
