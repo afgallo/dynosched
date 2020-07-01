@@ -19,7 +19,7 @@ SCALE_DOWN_AT=19 // the hour to scale down your dyno formation in your timezone
 TZ='Australia/Sydney'
 ```
 
-### 2. Configure the heroky scheduler add-on to run `dynosched`
+### 2. Configure the heroku scheduler add-on to run `dynosched`
 https://devcenter.heroku.com/articles/scheduler
 
 
