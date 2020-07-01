@@ -1,6 +1,6 @@
 {
   "name": "dynosched",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Small and opinionated script to scale Heroku dynos up and down on a schedule",
   "author": "Andre Gallo <afgallo@gmail.com>",
   "repository": {
